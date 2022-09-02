@@ -126,11 +126,11 @@ def quiz():
         
 app.add_url_rule('/','webio_view',webio_view(quiz),methods=['GET','POST','OPTIONS'])
 
-#if __name__ == '__main__':
-#    parser = argparse.ArgumentParser()
-#    parser.add_argument("-p", "--port", type=int, default=8080)
-#    args = parser.parse_args()
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-p", "--port", type=int, default=8080)
+    args = parser.parse_args()
     
-#    start_server(quiz, port=args.port)
+    start_server(quiz, port=args.port)
 
-app.run(host='localhost', port=5000)
+#app.run(host='localhost', port=5000)
